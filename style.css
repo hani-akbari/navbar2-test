@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+   /* border: 1px solid rebeccapurple; */
+}
+/* right */
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+    /* border: 1px solid green; */
+}
+.header__right .logo__toggle{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 2px solid red;
+
+}
+.header__right .navbar ul {
+    display:flex;
+    flex-direction: row-reverse;
+    border: 1px solid blue;
+}
+.header__right .navbar ul li{
+    list-style: none;
+    margin-right: 20px;
+    font-weight: 500;
+}
+.logo__toggle .toggle{
+  display: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: blueviolet;
+
+}
+@media (max-width: 580px) {
+    .logo__toggle .toggle{
+        display: block;
+    }
+    .header__right .navbar {
+        display: block;
+    
+        position: absolute;
+        top: 50px;
+        right: 130px;
+    }
+   
+
+}
+/* end right */
+
+/* left */
+.botton-top{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 2px solid blue;
+}
+.botton-top .cart-plus{
+    color: blueviolet;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.botton-top .btn-login i{
+    color: blueviolet;
+    font-size: 20px;
+    margin-left:20px ;
+  
+}
+.botton-top .btn-login p{
+    display: inline-block;
+   margin-right: 1px;
+}
